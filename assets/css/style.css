@@ -43,15 +43,26 @@ body{
     background-color: #E6F0FF;
 }
 /* =======Header======= */
-header:first-of-type{
+.fixed-header{
+    background: #E6F0FF;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px; /* Giúp cuộn lên theo thẻ cha 26px */
+    z-index: 1;;
+}
+.hero-wrap{
     height: 100vh;
     position: relative;
+    background: #E6F0FF;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar{
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
     
 }
 .navbar ul{
